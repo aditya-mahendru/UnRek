@@ -1,0 +1,40 @@
+[
+    {'University': 'Berkeley, School of Information', 'Specialisation': ['Online Master of Information and Cybersecurity (MICS)'
+        ]
+    },
+    {'University': 'Carnegie Mellon University', 'Specialisation': ['Ranked #1', 'Ranked #1 in Cybersecurity', 'Policy'
+        ]
+    },
+    {'University': 'Georgia Institute of Technology', 'Specialisation': ['Concentration', 'Online MS in Cybersecurity'
+        ]
+    },
+    {'University': 'Georgia Institute of Technology-Main Campus', 'Specialisation': ['Cybersecurity'
+        ]
+    },
+    {'University': 'New York University - Tandon School of Engineering', 'Specialisation': [
+            "Master's in Cybersecurity"
+        ]
+    },
+    {'University': 'Purdue University', 'Specialisation': ['Concentration'
+        ]
+    },
+    {'University': 'Purdue University, Polytechnic Institute', 'Specialisation': [
+            "Master's in Cybersecurity Management"
+        ]
+    },
+    {'University': 'Syracuse University', 'Specialisation': ['Cybersecurity'
+        ]
+    },
+    {'University': 'University of California-Berkeley', 'Specialisation': ['Information and Cybersecurity'
+        ]
+    },
+    {'University': 'University of Illinois at Urbana-Champaign', 'Specialisation': ['Specialization'
+        ]
+    },
+    {'University': 'University of Maryland, College Park', 'Specialisation': ['Ranked #1'
+        ]
+    },
+    {'University': 'University of Maryland-College Park', 'Specialisation': ['Security'
+        ]
+    }
+]

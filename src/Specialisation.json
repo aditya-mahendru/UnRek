@@ -1,0 +1,77 @@
+[
+    {
+        "University": "Carnegie Mellon University",
+        "Specialisation": [
+            "Information Security",
+            "Information Security Policy and Assurance",
+            "Pittsburgh, PA"
+        ]
+    },
+    {
+        "University": "Georgia Institute of Technology",
+        "Specialisation": [
+            "Cybersecurity",
+            "Cybersecurity"
+        ]
+    },
+    {
+        "University": "New York University",
+        "Specialisation": [
+            "Cybersecurity"
+        ]
+    },
+    {
+        "University": "Purdue University",
+        "Specialisation": [
+            "Information Security"
+        ]
+    },
+    {
+        "University": "Rochester Institute of Technology (RIT)",
+        "Specialisation": [
+            "Computing Security"
+        ]
+    },
+    {
+        "University": "University of Alabama in Huntsville",
+        "Specialisation": [
+            "Huntsville, AL"
+        ]
+    },
+    {
+        "University": "University of Baltimore",
+        "Specialisation": [
+            "Forensic Science - Cyber Investigations"
+        ]
+    },
+    {
+        "University": "University of California-Berkeley",
+        "Specialisation": [
+            "Berkeley, CA"
+        ]
+    },
+    {
+        "University": "University of Denver",
+        "Specialisation": [
+            "Denver, CO"
+        ]
+    },
+    {
+        "University": "University of Illinois at Urbana-Champaign",
+        "Specialisation": [
+            "Cybersecurity"
+        ]
+    },
+    {
+        "University": "University of Maryland Global Campus",
+        "Specialisation": [
+            "Adelphi, MD"
+        ]
+    },
+    {
+        "University": "University of Maryland, College Park",
+        "Specialisation": [
+            "Cybersecurity"
+        ]
+    }
+]

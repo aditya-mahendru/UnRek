@@ -1,0 +1,22 @@
+{
+    "UserInfo": {
+        "GPA": "low",
+        "Stream": "CSE"
+    },
+    "Preferences": {
+        "Country": "USA",
+        "Stream": "CSE",
+        "Specialisation": "Cyber Security",
+        "Placement organisations": [
+            "Google",
+            "Microsoft"
+        ]
+    },
+    "filters": {
+        "Converion To PhD": true,
+        "Cost of Living": true
+    },
+    "Dependent_Params": {
+        "Stream": "Specialisation"
+    }
+}
