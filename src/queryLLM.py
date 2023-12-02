@@ -5,7 +5,7 @@ from langchain.llms import Ollama
 
 MODEL = "openhermes2.5-mistral:7b-fp16"
 
-llm = Ollama(base_url="http://localhost:11434", model=MODEL, temperature=0.1)
+llm = Ollama(base_url="http://localhost:11434", model=MODEL, temperature=0.2)
 
 
 def singleQuestionForInfo(property, intendedTowards, isBool):
@@ -31,10 +31,15 @@ def singleQuestionForPreference(property, isBool):
 
 
 def searchQuery(property, preference):
-    query = "Generate a search prompt to be used in a web search to get University data for a aspiring masters student with {} requirement and the {} preferences. Only generate one result. Do not generate anything besides the query.".format(
+    query = "Generate a search prompt to be used in a web search to get University data for a aspiring masters student with {} requirement and the {} preferences. Do not generate anything besides the query.".format(
         property, preference
     )
-    return llm(query)
+
+    queryOut = 'masters degree "{}" {} {}'.format(
+        preference[0], property[1], property[0]
+    )
+    return queryOut
+    # return llm(query)
 
 
 def summarizeRanking(textContent, property):
@@ -48,7 +53,7 @@ def summarizeRanking(textContent, property):
 
 def genJsonRankings(textContent, property):
     query = r"""{} 
-    Convert it to a JSON list of only university names and {} requirement. Just generate the JSON without saying anything and without markdown. Every Json element should be of the following format:
+    Convert it to a JSON list of only university names and {} requirement. Just generate the JSON without saying anything and without markdown. Only use data from the given inputs. Every Json element should be of the following format:
     {{"University":University Name here,{}:Citeria in one word}}
     """.format(
         textContent, property, property
@@ -57,3 +62,72 @@ def genJsonRankings(textContent, property):
     # print(query)
     # return True
     return llm(query)
+
+
+def generateIntersection(list1, list2):
+    query = "Generate a python list containing the common universiteis in {} and {}. Generate only a python list as an output.".format(
+        list1, list2
+    )
+    return llm(query)
+
+
+def checkCountry(list1, countryName):
+    query = "{} From the following list remove all the universities that are not in {} country. Only use the data provided. Generate only a python list as an output. Do not generate anything else.".format(
+        list1, countryName
+    )
+    return llm(query)
+
+
+def summarizeUniData(uniName, data):
+    query = "{}  {}. From the above data write a 100 word summary about {}. Do not generate anything else.".format(
+        data[0], data[1], uniName
+    )
+
+    return llm(query)
+
+
+# list1 = [
+#     "University of California - San Diego (UCSD)",
+#     "Stanford University - Department of Computer Science",
+#     "University of California, Los Angeles - Department of Computer Science",
+#     "Massachusetts Institute of Technology (MIT)",
+#     "None",
+#     "IIT Delhi",
+#     "IIT Madras",
+#     "California Institute of Technology",
+#     "Princeton University",
+#     "Stanford University",
+#     "Harvard University",
+#     "California Institute of Technology (Caltech)",
+#     "Massachusetts Institute of Technology",
+#     "Marlan and Rosemary Bourns College of Engineering at UC Riverside",
+#     "IIT Bombay",
+#     "Massachusetts Institute of Technology - Department of Electrical Engineering and Computer Science",
+#     "IIT Roorkee",
+#     "IIT Kharagpur",
+# ]
+# list2 = [
+#     "Indian Institute of Technology (IIT), Kanpur",
+#     "Carnegie Mellon University",
+#     "Indian Institute of Technology (IIT), Kharagpur",
+#     "Indian Institute of Technology (IIT) - Kharagpur",
+#     "Indian Institute of Technology (IIT) - Madras",
+#     "Princeton University",
+#     "Stanford University",
+#     "Indian Institute of Technology (IIT) - Bombay",
+#     "University of California, Berkeley",
+#     "ETH Zurich",
+#     "University of California - Berkeley",
+#     "Indian Institute of Technology (IIT) - Kanpur",
+#     "Indian Institute of Technology (IIT), Bombay",
+#     "Indian Institute of Technology (IIT), Madras",
+#     "Harvard University",
+#     "Indian Institute of Technology (IIT), Delhi",
+#     "Massachusetts Institute of Technology (MIT)",
+#     "Georgia Institute of Technology",
+#     "Indian Institute of Technology (IIT) - Delhi",
+#     "California Institute of Technology (Caltech)",
+#     "MIT",
+# ]
+
+# print(checkCountry(generateIntersection(list1, list2), "India"))

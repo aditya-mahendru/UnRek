@@ -1,0 +1,14 @@
+{
+    "GPA": [
+        "Country",
+        "Stream",
+        "Specialisation"
+    ],
+    "Stream": [
+        "Country",
+        "Placement organisations"
+    ],
+    "Specialisation": [
+        "Country"
+    ]
+}

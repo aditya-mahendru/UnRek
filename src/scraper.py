@@ -13,7 +13,12 @@ USER_AGENT_LIST = [
 
 def fetch_html(url):
     try:
-        headers = {"User-Agent": random.choice(USER_AGENT_LIST)}
+        headers = {
+            "User-Agent": random.choice(USER_AGENT_LIST),
+            "Sec-Ch-Ua": '"Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
+            "Sec-Ch-Ua-Mobile": "?0",
+            "Sec-Ch-Ua-Mobile": "Windows",
+        }
         req = Request(url, headers=headers)
         with urlopen(req) as response:
             return response.read()
@@ -32,12 +37,14 @@ def extract_text_from_html(html_content):
         return None
 
 
-def extract_html_content(query, num_results=5):
+def extract_html_content(query, regionCode, num_results=5):
     html_contents = []
 
     # Use DuckDuckGo search results
     with DDGS() as ddgs:
-        for result in ddgs.text(query, region="wt-wt", safesearch="off", timelimit="y"):
+        for result in ddgs.text(
+            query, region=regionCode, safesearch="off", timelimit="y"
+        ):
             html = fetch_html(result["href"])
             if html:
                 html_contents.append(html)
@@ -63,14 +70,12 @@ def extract_html_content(query, num_results=5):
 #             print(text_content)
 #             print("=" * 50)
 
-NUM_RESULTS = 3
 
-
-def scrapeDuck(query):
+def scrapeDuck(query, regionCode, numResults):
     # print(type(query))
     # print(query)
     # print("Scraping Web")
-    html_contents = extract_html_content(query, NUM_RESULTS)
+    html_contents = extract_html_content(query, regionCode, numResults)
 
     # print(type(html_contents))
 

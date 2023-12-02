@@ -1,15 +1,16 @@
 {
     "UserInfo": {
-        "GPA": "low",
-        "Stream": "CSE"
+        "GPA": "above 8",
+        "Stream": "CSE",
+        "Specialisation": "AI"
     },
     "Preferences": {
-        "Country": "USA",
+        "Country": "United States",
         "Stream": "CSE",
-        "Specialisation": "Cyber Security",
+        "Specialisation": "AI",
         "Placement organisations": [
             "Google",
-            "Microsoft"
+            "Amazon"
         ]
     },
     "filters": {

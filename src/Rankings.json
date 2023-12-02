@@ -1,40 +1,175 @@
 [
-    {'University': 'Berkeley, School of Information', 'Specialisation': ['Online Master of Information and Cybersecurity (MICS)'
+    {'University': 'Anna University', 'GPA': ['N/A'
         ]
     },
-    {'University': 'Carnegie Mellon University', 'Specialisation': ['Ranked #1', 'Ranked #1 in Cybersecurity', 'Policy'
+    {'University': 'California Institute of Technology (Caltech)', 'GPA': ['Above 8'
         ]
     },
-    {'University': 'Georgia Institute of Technology', 'Specialisation': ['Concentration', 'Online MS in Cybersecurity'
+    {'University': 'Harvard University', 'GPA': ['High'
         ]
     },
-    {'University': 'Georgia Institute of Technology-Main Campus', 'Specialisation': ['Cybersecurity'
+    {'University': 'IISc', 'GPA': ['Above 8'
         ]
     },
-    {'University': 'New York University - Tandon School of Engineering', 'Specialisation': [
-            "Master's in Cybersecurity"
+    {'University': 'IIT Bombay', 'GPA': ['Above 8'
         ]
     },
-    {'University': 'Purdue University', 'Specialisation': ['Concentration'
+    {'University': 'IIT Delhi', 'GPA': ['Above 8'
         ]
     },
-    {'University': 'Purdue University, Polytechnic Institute', 'Specialisation': [
-            "Master's in Cybersecurity Management"
+    {'University': 'IIT Kanpur', 'GPA': ['Above 8'
         ]
     },
-    {'University': 'Syracuse University', 'Specialisation': ['Cybersecurity'
+    {'University': 'IIT Madras', 'GPA': ['Above 8'
         ]
     },
-    {'University': 'University of California-Berkeley', 'Specialisation': ['Information and Cybersecurity'
+    {'University': 'Indian Institute of Science', 'GPA': ['N/A'
         ]
     },
-    {'University': 'University of Illinois at Urbana-Champaign', 'Specialisation': ['Specialization'
+    {'University': 'Jamia Milia Islamia', 'GPA': ['N/A'
         ]
     },
-    {'University': 'University of Maryland, College Park', 'Specialisation': ['Ranked #1'
+    {'University': 'Mahatma Gandhi University', 'GPA': ['N/A'
         ]
     },
-    {'University': 'University of Maryland-College Park', 'Specialisation': ['Security'
+    {'University': 'Massachusetts Institute of Technology (MIT)', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'Shoolini University of Biotechnology and Management Sciences', 'GPA': ['N/A'
+        ]
+    },
+    {'University': 'Stanford University', 'GPA': ['Competitive'
+        ]
+    },
+    {'University': 'University of Pennsylvania', 'GPA': ['High'
+        ]
+    },
+    {'University': 'California Institute of Technology', 'GPA': ['above 8'
+        ]
+    },
+    {'University': 'California Institute of Technology (Caltech)', 'GPA': ['Above'
+        ]
+    },
+    {'University': 'Harvard John A. Paulson School of Engineering and Applied Sciences', 'GPA': ['above 8'
+        ]
+    },
+    {'University': 'Harvard University', 'GPA': ['Above'
+        ]
+    },
+    {'University': 'Massachusetts Institute of Technology', 'GPA': ['above 8'
+        ]
+    },
+    {'University': 'Massachusetts Institute of Technology (MIT)', 'GPA': ['Above'
+        ]
+    },
+    {'University': 'Princeton University', 'GPA': ['above 8', 'Above'
+        ]
+    },
+    {'University': 'Stanford University', 'GPA': ['above 8', 'High', 'Above'
+        ]
+    },
+    {'University': 'University of California - Los Angeles', 'GPA': ['High'
+        ]
+    },
+    {'University': 'University of California - San Diego', 'GPA': ['High'
+        ]
+    },
+    {'University': 'University of Illinois at Urbana-Champaign', 'GPA': ['High'
+        ]
+    },
+    {'University': 'University of Washington', 'GPA': ['High'
+        ]
+    },
+    {'University': 'Carnegie Mellon University', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'Georgia Institute of Technology', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'Harvard University', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'Princeton University', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'Purdue University', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'Stanford University', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University A', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University B', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University C', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University D', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University E', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University of California, Berkeley', 'GPA': ['Above 8'
+        ]
+    },
+    {'University': 'University of Illinois at Urbana-Champaign', 'GPA': ['Above 8'
+        ]
+    }
+]
+[
+    {'University': 'Anna University', 'Stream': ['Ranked'
+        ]
+    },
+    {'University': 'Birla Institute of Technology and Science - Pilani (Pilani Campus)', 'Stream': ['Ranked'
+        ]
+    },
+    {'University': 'California Institute of Technology', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'California Institute of Technology (Caltech)', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Carnegie Mellon University', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Chandigarh University', 'Stream': ['Ranked'
+        ]
+    },
+    {'University': 'College of Engineering, Anna University', 'Stream': ['Ranked'
+        ]
+    },
+    {'University': 'Georgia Institute of Technology', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Harvard University', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Massachusetts Institute of Technology', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Massachusetts Institute of Technology (MIT)', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Panjab University', 'Stream': ['Ranked'
+        ]
+    },
+    {'University': 'Princeton University', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Stanford University', 'Stream': ['CSE', 'CSE'
+        ]
+    },
+    {'University': 'Harvard John A. Paulson School of Engineering and Applied Sciences', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Purdue University - Department of Computer Science', 'Stream': ['CSE'
+        ]
+    },
+    {'University': 'Stanford University', 'Stream': ['CSE'
         ]
     }
 ]

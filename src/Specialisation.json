@@ -1,77 +1,187 @@
 [
-    {
-        "University": "Carnegie Mellon University",
-        "Specialisation": [
-            "Information Security",
-            "Information Security Policy and Assurance",
-            "Pittsburgh, PA"
-        ]
+    {'GPA': ['Low'
+        ], 'University': 'University of Florida'
     },
-    {
-        "University": "Georgia Institute of Technology",
-        "Specialisation": [
-            "Cybersecurity",
-            "Cybersecurity"
-        ]
+    {'GPA': ['2.75'
+        ], 'University': 'University of Texas Arlington'
     },
-    {
-        "University": "New York University",
-        "Specialisation": [
-            "Cybersecurity"
-        ]
+    {'GPA': ['2.0'
+        ], 'University': 'University of Illinois Springfield'
     },
-    {
-        "University": "Purdue University",
-        "Specialisation": [
-            "Information Security"
-        ]
+    {'GPA': ['2.5'
+        ], 'University': 'University of North Carolina at Chapel Hill'
     },
-    {
-        "University": "Rochester Institute of Technology (RIT)",
-        "Specialisation": [
-            "Computing Security"
-        ]
+    {'GPA': ['Low'
+        ], 'University': 'Florida International University (FIU)'
     },
-    {
-        "University": "University of Alabama in Huntsville",
-        "Specialisation": [
-            "Huntsville, AL"
-        ]
+    {'GPA': ['2.0'
+        ], 'University': 'American InterContinental University'
     },
-    {
-        "University": "University of Baltimore",
-        "Specialisation": [
-            "Forensic Science - Cyber Investigations"
-        ]
+    {'GPA': ['2.75'
+        ], 'University': 'University of Texas Rio Grande Valley'
     },
-    {
-        "University": "University of California-Berkeley",
-        "Specialisation": [
-            "Berkeley, CA"
-        ]
+    {'GPA': ['Low'
+        ], 'University': 'University of South Florida'
     },
-    {
-        "University": "University of Denver",
-        "Specialisation": [
-            "Denver, CO"
-        ]
+    {'GPA': ['Low'
+        ], 'University': 'University of Maryland - Baltimore County (UMBC)'
     },
-    {
-        "University": "University of Illinois at Urbana-Champaign",
-        "Specialisation": [
-            "Cybersecurity"
-        ]
+    {'GPA': ['Low'
+        ], 'University': 'University of Alabama at Birmingham (UAB)'
     },
-    {
-        "University": "University of Maryland Global Campus",
-        "Specialisation": [
-            "Adelphi, MD"
-        ]
+    {'GPA': ['Low'
+        ], 'University': 'Georgia Institute of Technology'
     },
-    {
-        "University": "University of Maryland, College Park",
-        "Specialisation": [
-            "Cybersecurity"
-        ]
+    {'GPA': ['2.7'
+        ], 'University': 'University of Southern California'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'Norwich University'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of San Diego'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'California State University, Fullerton'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Texas at Arlington'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Washington - Bothell Campus'
+    },
+    {'GPA': ['2.50'
+        ], 'University': 'University of Texas San Antonio'
+    },
+    {'GPA': ['2.5'
+        ], 'University': 'Eastern Kentucky University'
+    },
+    {'GPA': ['2.0'
+        ], 'University': 'Liberty University'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of California, Irvine'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Tulsa'
+    },
+    {'GPA': [''
+        ], 'University': 'University of Illinois at Urbana-Champaign'
+    },
+    {'GPA': ['2.75'
+        ], 'University': 'University of Texas Permian Basin'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'Arizona State University'
+    },
+    {'GPA': ['2.50'
+        ], 'University': 'University of Texas at El Paso'
+    },
+    {'GPA': ['2.0'
+        ], 'University': 'Southern New Hampshire University'
+    },
+    {'GPA': [''
+        ], 'University': 'University of Wisconsin-Madison'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Illinois Urbana-Champaign'
+    },
+    {'GPA': ['2.50'
+        ], 'University': 'University of North Carolina – Pembroke'
+    },
+    {'GPA': ['2.75'
+        ], 'University': 'University of West Alabama'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of North Texas'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of California, Davis'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'Ohio State University'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of the Pacific'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Alabama'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Illinois Springfield'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Texas at San Antonio (UTSA)'
+    },
+    {'GPA': ['2.75'
+        ], 'University': 'University of Wisconsin – Milwaukee'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Maryland Global Campus'
+    },
+    {'GPA': ['Low'
+        ], 'University': 'University of Alabama at Birmingham'
+    },
+    {'GPA': ['2.7'
+        ], 'University': 'University of Florida'
+    },
+    {'GPA': ['2.50'
+        ], 'University': 'University of Louisiana at Monroe'
+    }
+]
+[
+    {'Stream': ['CSE'
+        ], 'University': 'Georgia Institute of Technology'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'IIT Bombay'
+    },
+    {'Stream': ['All'
+        ], 'University': 'Massachusetts Institute of Technology (MIT)'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'IIT Delhi'
+    },
+    {'Stream': ['All'
+        ], 'University': 'California Institute of Technology (Caltech)'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'Massachusetts Institute of Technology'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'IIT Kanpur'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'California Institute of Technology'
+    },
+    {'Stream': ['All'
+        ], 'University': 'Princeton University'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'Harvard John A. Paulson School of Engineering and Applied Sciences'
+    },
+    {'Stream': ['All', 'CSE'
+        ], 'University': 'Harvard University'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'Stanford University'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'Massachusetts Institute of Technology (MIT)'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'IIT Kharagpur'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'California Institute of Technology (Caltech)'
+    },
+    {'Stream': ['All', 'CSE'
+        ], 'University': 'Stanford University'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'Carnegie Mellon University'
+    },
+    {'Stream': ['CSE'
+        ], 'University': 'IIT Madras'
     }
 ]

@@ -1,5 +1,8 @@
 import json
 
+from getReport import getReport
+from genData import searchAllPreferences
+
 
 def showFilters():
     with open("maps.json") as f:
@@ -39,14 +42,19 @@ def initUserInterface():
     while True:
         print("1: Generate Overall Report")
         print("2 : Browse and Select Filters")
-        print("3 : Re-Enter Information")
+        print("3 : Update Data")
+        print("4 : Re-Enter Information")
         print("-----------------------------")
         print("00 : Exit")
         choice = input()
 
-        if choice == "2":
+        if choice == "1":
+            getReport()
+        elif choice == "2":
             showFilters()
         elif choice == "3":
+            searchAllPreferences()
+        elif choice == "4":
             return -1
         elif choice == "00":
             return 0

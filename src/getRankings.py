@@ -4,6 +4,9 @@ import itertools
 
 from queryLLM import searchQuery, summarizeRanking, genJsonRankings
 from scraper import scrapeDuck
+from regionCode import getRegionCode
+
+NUM_RESULTS = 5
 
 
 def searchWeb(propName, preference):
@@ -12,12 +15,13 @@ def searchWeb(propName, preference):
 
     userInfo = data["UserInfo"]
     preferences = data["Preferences"]
+    country = preferences["Country"]
 
     query = searchQuery(
         [userInfo[propName], propName], [preferences[preference], preference]
     )
     query = re.findall(r'"(.*?)"', query)[0]
-    textContent = scrapeDuck(query)
+    textContent = scrapeDuck(query, getRegionCode(country), NUM_RESULTS)
 
     return textContent
 
@@ -34,9 +38,9 @@ def generateUniversityList(propName, textContent):
         bleh = genJsonRankings(
             summarizeRanking(page, [userInfo[propName], propName]), propName
         )
-        print(type(bleh))
+        # print(type(bleh))
         bleh2 = json.loads(bleh)
-        print(type(bleh2))
+        # print(type(bleh2))
         # print(bleh2)\
         allRankings.extend(bleh2)
 
