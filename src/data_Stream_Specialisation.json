@@ -1,1 +1,67 @@
-[{"University": "California Institute of Technology (Caltech)", "Stream": ["Technology", "Science", "Computer Science", "Computer Science and Engineering", "CSE"]}, {"University": "Carnegie Mellon University", "Stream": ["Computer", "Computer Science and Engineering", "CSE"]}, {"University": "Georgia Institute of Technology", "Stream": ["Computer Science and Engineering"]}, {"University": "Harvard University", "Stream": ["Engineering", "Computer Science", "Computer Science"]}, {"University": "Massachusetts Institute of Technology (MIT)", "Stream": ["Science", "Engineering", "Engineering", "Computer Science and Engineering", "CSE"]}, {"University": "Princeton University", "Stream": ["Engineering", "Engineering"]}, {"University": "Stanford University", "Stream": ["Engineering", "CSE", "Computer Science", "Computer Science and Engineering", "CSE"]}, {"University": "University of California, Berkeley (UC Berkeley)", "Stream": ["CSE"]}]
+[
+    {
+        "University": "California Institute of Technology (Caltech)",
+        "Stream": [
+            "Technology",
+            "Science",
+            "Computer Science",
+            "Computer Science and Engineering",
+            "CSE"
+        ]
+    },
+    {
+        "University": "Carnegie Mellon University",
+        "Stream": [
+            "Computer",
+            "Computer Science and Engineering",
+            "CSE"
+        ]
+    },
+    {
+        "University": "Georgia Institute of Technology",
+        "Stream": [
+            "Computer Science and Engineering"
+        ]
+    },
+    {
+        "University": "Harvard University",
+        "Stream": [
+            "Engineering",
+            "Computer Science",
+            "Computer Science"
+        ]
+    },
+    {
+        "University": "Massachusetts Institute of Technology (MIT)",
+        "Stream": [
+            "Science",
+            "Engineering",
+            "Engineering",
+            "Computer Science and Engineering",
+            "CSE"
+        ]
+    },
+    {
+        "University": "Princeton University",
+        "Stream": [
+            "Engineering",
+            "Engineering"
+        ]
+    },
+    {
+        "University": "Stanford University",
+        "Stream": [
+            "Engineering",
+            "CSE",
+            "Computer Science",
+            "Computer Science and Engineering",
+            "CSE"
+        ]
+    },
+    {
+        "University": "University of California, Berkeley (UC Berkeley)",
+        "Stream": [
+            "CSE"
+        ]
+    }
+]

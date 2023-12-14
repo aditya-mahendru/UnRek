@@ -20,9 +20,11 @@ def searchWeb(propName, preference):
     query = searchQuery(
         [userInfo[propName], propName], [preferences[preference], preference]
     )
-    query = re.findall(r'"(.*?)"', query)[0]
-    textContent = scrapeDuck(query, getRegionCode(country), NUM_RESULTS)
+    # query2 = re.findall(r'"(.*?)"', query)[0]
+    print(query)
 
+    textContent = scrapeDuck(query, getRegionCode(country), NUM_RESULTS)
+    # print(textContent)
     return textContent
 
 

@@ -45,7 +45,9 @@ def extract_html_content(query, regionCode, num_results=5):
         for result in ddgs.text(
             query, region=regionCode, safesearch="off", timelimit="y"
         ):
+            # print(result)
             html = fetch_html(result["href"])
+            # print(html)
             if html:
                 html_contents.append(html)
             if len(html_contents) >= num_results:
@@ -57,27 +59,9 @@ def extract_html_content(query, regionCode, num_results=5):
     return html_contents
 
 
-# if __name__ == "__main__":
-#     query = "How to delete all lines in vim"  # Replace with your desired query
-#     num_results = 1  # Number of results to fetch
-
-#     html_contents = extract_html_content(query, num_results)
-
-#     for i, html_content in enumerate(html_contents, start=1):
-#         text_content = extract_text_from_html(html_content)
-#         if text_content:
-#             print(f"Text content for result {i}:")
-#             print(text_content)
-#             print("=" * 50)
-
-
 def scrapeDuck(query, regionCode, numResults):
-    # print(type(query))
-    # print(query)
-    # print("Scraping Web")
+    print("Scraping Web")
     html_contents = extract_html_content(query, regionCode, numResults)
-
-    # print(type(html_contents))
 
     textContent = []
     ## TODO:  Fix Variable Naming

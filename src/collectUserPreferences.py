@@ -2,7 +2,7 @@ import json
 from queryLLM import singleQuestionForPreference
 
 
-def collectPrefernces():
+def collectPreferences():
     with open("UserData.json") as f:
         data = json.load(f)
 
@@ -31,7 +31,7 @@ def collectPrefernces():
     data["Preferences"] = preferencesCopy
 
     with open("UserData.json", "w") as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=2)
 
 
-collectPrefernces()
+# collectPreferences()

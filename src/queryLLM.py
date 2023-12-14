@@ -1,11 +1,15 @@
 from langchain.llms import Ollama
+from yaspin import yaspin
+from consistency import confidence
 
 # from langchain.chains import ConversationChain
 # from langchain.memory import ConversationBufferMemory
 
 MODEL = "openhermes2.5-mistral:7b-fp16"
 
-llm = Ollama(base_url="http://localhost:11434", model=MODEL, temperature=0.2)
+llm = Ollama(
+    base_url="http://localhost:11434", model=MODEL, temperature=0.1, stop=["<|im_end|>"]
+)
 
 
 def singleQuestionForInfo(property, intendedTowards, isBool):
@@ -46,8 +50,11 @@ def summarizeRanking(textContent, property):
     query = "Consider the following University related data from a webpage:{} From the above data generate a list of top 5 universities matching the {} criteria. Only output the rankings along with the critera for your descision.Only use the provided data.Only generate a list of universities".format(
         textContent, property
     )
-    # print(llm(query))
-
+    # with yaspin():
+    #     confidence_score = confidence(query)
+    # function_string = f"Summarizing Ranking: {confidence_score}"
+    # with open("./confidence.txt", "a") as file:
+    #     file.write(function_string + "\n")
     return llm(query)
 
 
@@ -65,9 +72,14 @@ def genJsonRankings(textContent, property):
 
 
 def generateIntersection(list1, list2):
-    query = "Generate a python list containing the common universiteis in {} and {}. Generate only a python list as an output.".format(
+    query = "Generate a python list containing the common universities in {} and {}. Generate only a python list as an output.".format(
         list1, list2
     )
+    # with yaspin():
+    #     confidence_score = confidence(query)
+    # function_string = f"Intersecting Universities: {confidence_score}"
+    # with open("./confidence.txt", "a") as file:
+    #     file.write(function_string + "\n")
     return llm(query)
 
 
@@ -82,7 +94,11 @@ def summarizeUniData(uniName, data):
     query = "{}  {}. From the above data write a 100 word summary about {}. Do not generate anything else.".format(
         data[0], data[1], uniName
     )
-
+    # with yaspin():
+    #     confidence_score = confidence(query)
+    # function_string = f"Summarizing University Data: {confidence_score}"
+    # with open("./confidence.txt", "a") as file:
+    #     file.write(function_string + "\n")
     return llm(query)
 
 

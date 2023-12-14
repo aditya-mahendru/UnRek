@@ -1,1 +1,20 @@
-{"UserInfo": {"GPA": "8.87", "Stream": "CSE", "Specialisation": "AI"}, "Preferences": {"Country": "India", "Stream": "Computer Science and Engineering", "Specialisation": "AI", "Placement organisations": ["Google"]}, "filters": {"Converion To PhD": true, "Cost of Living": true}, "Dependent_Params": {"Stream": "Specialisation"}}
+{
+    "UserInfo": {
+        "GPA": "8.87",
+        "Stream": "CSE",
+        "Specialisation": "AI"
+    },
+    "Preferences": {
+        "Country": "United States",
+        "Stream": "CSE",
+        "Specialisation": "AI",
+        "Placement organisations": [
+            "Google",
+            "Amazon"
+        ]
+    },
+    "filters": {
+        "Converion To PhD": true,
+        "Cost of Living": true
+    }
+}

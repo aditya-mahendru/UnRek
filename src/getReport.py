@@ -2,7 +2,8 @@ import json
 from queryLLM import generateIntersection, checkCountry, summarizeUniData
 from regionCode import getRegionCode
 from scraper import scrapeDuck
-import wikipedia
+
+# import wikipedia
 
 
 def getReport():
@@ -26,8 +27,9 @@ def getReport():
         allProps.append(list(combined))
 
     uniList = checkCountry(generateIntersection(allProps[0], allProps[1]), country)
-    print(uniList)
-    print(type(uniList))
+    # print(uniList)
+    return uniList
+    # print(json.loads(uniList))
 
     # for uni in uniList:
     #     # l1 = scrapeDuck(uni, getRegionCode(country), 2)

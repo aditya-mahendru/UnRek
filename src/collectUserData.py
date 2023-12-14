@@ -26,8 +26,10 @@ def getDataFromQ():
 
     data["UserInfo"] = userDataCopy
 
-    with open("userData.json", "w") as f:
-        json.dump(data, f)
+    with open("UserData.json", "w") as f:
+        json.dump(data, f, indent=2)
+
+    return True
 
 
-print(getDataFromQ())
+# print(getDataFromQ())
